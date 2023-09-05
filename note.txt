@@ -1,0 +1,95 @@
+useful Functions
+    enumerate()
+    f-string
+    list()
+    iter() and next()
+    .join()
+    List Comprehension
+    ord(), chr(), and hex()
+    map()
+    Lambda Functions
+
+import string
+string.ascii_letters
+'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+ string.whitespace
+    ' \t\n\r\x0b\x0c'
+ string.punctuation 
+'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+
+string. # the below output is some autocomplete suggestions of string methods
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│ Formatter              Template               ascii_letters                     │
+│ ascii_lowercase        ascii_uppercase        capwords                          │
+│ digits                 hexdigits              octdigits                         │
+│ printable              punctuation            whitespace                        │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+
+pprint
+
+from pprint import pprint
+ dic = {40: 'yellow', 39: 'black', 38: 'yellow', 37: 'black', 36: 'yellow', 35: 'black', 34: 'yellow'
+, 33: 'black', 32: 'ooh', 31: 'black', 30: 'and', 29: 'yellow'}
+print(dic)
+{40: 'yellow', 39: 'black', 38: 'yellow', 37: 'black', 36: 'yellow', 35: 'black', 34: 'yellow', 33: 'bla
+ck', 32: 'ooh', 31: 'black', 30: 'and', 29: 'yellow'}
+pprint(dic)
+{29: 'yellow',
+ 30: 'and',
+ 31: 'black',
+ 32: 'ooh',
+ 33: 'black',
+ 34: 'yellow',
+ 35: 'black',
+ 36: 'yellow',
+ 37: 'black',
+ 38: 'yellow',
+ 39: 'black',
+ 40: 'yellow'}
+
+
+Data conversion
+
+base64
+
+binascii
+
+
+Opening a file
+
+f = open('file.txt', 'r')
+f.close()
+
+
+basic modes
+
+"x" - Create - will create a file, returns an error if the file exist.
+"a" - Append - will create a file if the specified file does not exist.
+"w" - Write - will create a file if the specified file does not exist.
+
+Reading 
+
+read()
+
+with open('file.txt', 'r') as f:
+    print(f.read())
+
+
+readline()
+
+with open('file.txt', 'r') as f:
+    print(f.readline())
+
+
+Writing
+
+write()
+
+with open("path to file", "w") as f:
+    content = f.write("This will be the only thing in the file")
+
+with open("path to file", "a") as f:
+    content = f.write("This will add this text to the file above!")
