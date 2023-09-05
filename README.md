@@ -15,9 +15,8 @@
 
 common tools
 
-| tool |
-
-| ------ |
+| tool | description |
+| ------ | ------ |
 | objdump | [objdump] Linux command-line disassembler |
 | gdb | [gdb] Linux command-line debuger |
 | binwalk | [binwalk] Linux command-line tool for analyzing, reverse engineering, and extracting firmware images |
