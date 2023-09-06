@@ -1,6 +1,6 @@
 # pwn_learn
 
-# >>this is a repo for learning pwn and sripting<<>>
+# this is a repo for learning pwn and sripting
 
 ## basic command
 
