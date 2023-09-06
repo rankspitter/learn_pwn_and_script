@@ -1,4 +1,3 @@
-# pwn_learn
 
 # this is a repo for learning pwn and sripting
 
